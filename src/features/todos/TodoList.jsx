@@ -59,7 +59,7 @@ const TodoList = () => {
           placeholder='Enter new Todo'
         />
       </div>
-      <button disabled={isLoading} className='submit'>
+      <button hidden={isError} disabled={isLoading} className='submit'>
         <FontAwesomeIcon icon={faUpload} />
       </button>
     </form>
